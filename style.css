@@ -1,0 +1,108 @@
+* {
+    font-family: "Elms Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+:root {
+    --color-primary: #116A07;
+    --bg-color: linear-gradient(to top, #116A07, #ddebde);
+}
+body{
+    background: var(--bg-color);
+}
+
+section {
+    padding: 0 ;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+input[type="search"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+}
+
+.navegador {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem;
+}
+
+.menu a {
+    color: var(--color-primary);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.img-logo {
+    margin-top: 10px;
+
+}
+
+.banners {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: var(--color-primary);
+    border-radius: 30px;
+}
+
+.img-banners {
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    align-items: left;
+    justify-content: left;
+
+}
+
+h1 {
+    align-items: left;
+    margin-top: 20%;
+    display: flex;
+    color: white;
+    font-size: 100px;
+    place-content: right;
+
+}
+
+.escala-show {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: min(90%, 1100px);
+    margin: 5rem auto;
+    overflow: hidden;
+}
+
+.img-foto {
+    border-radius: 30px;
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 420px;
+    object-fit: cover;
+}
