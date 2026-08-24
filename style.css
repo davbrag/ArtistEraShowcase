@@ -6,7 +6,7 @@
     text-decoration: none;
     text-transform: uppercase;
     outline: none;
-    transition: all 0.3s ease-in-out;
+    transition: 0.3s linear;
 }
 
 :root {
@@ -23,9 +23,10 @@ section {
     max-width: 1200px;
 }
 
+/* menu */
 .pesquisa {
     display: flex;
-    align-items: center;
+    align-items: right;
     gap: 0.35rem;
 }
 
@@ -42,6 +43,21 @@ input[type="search"] {
     justify-content: space-between;
     gap: 1rem;
 }
+
+.navegador a {
+    color: var(--color-primary);
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 1%;
+}
+
+.navegador a:hover {
+    color: #11f04d;
+    padding-bottom: 0.5rem; 
+    font-size: 1.3rem;
+   
+}
+
 .menu {
     display: flex;
     align-items: center;
@@ -60,35 +76,49 @@ input[type="search"] {
 
 }
 
+/* 1 banner de divulgação do album */
+
 .banners {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30px, 10fr));
     gap: 20px;
-    margin: 2rem;
-    padding: 1rem;
+    margin: 4rem;
+    padding: 1.5rem;
     background-color: var(--color-primary);
     border-radius: 30px;
 }
 
-.img-banners {
-    margin-left: 40%;
-    margin-top: 5%;
-    margin-bottom: 1%;
-    align-items: left;
-    justify-content: left;
-
-}
-
-h1 {
-    align-items: left;
-    margin-top: 20%;
+.letra{
     display: flex;
-    color: white;
-    font-size: 100px;
-    place-content: right;
+    align-items: center;
+    justify-content: end;
+    font-size: 50px;
+    color: aliceblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    
+}
+
+
+.imgd {
+    margin: 20px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    
 
 }
 
+
+
+.streames{
+    display: flex;
+    margin: 0.5rem;
+    justify-items:right;
+    align-items: center;
+}
+
+
+/* 2 Banner com as datas de shows + Foto conceito */
 .escala-show {
     align-items: center;
     justify-content: center;
@@ -105,4 +135,19 @@ h1 {
     height: auto;
     min-height: 420px;
     object-fit: cover;
+}
+.agenda{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    top: 15px;
+    color: aliceblue;
+}
+
+.tour-item{
+    display: grid;
+    align-items: left;
+    
 }
