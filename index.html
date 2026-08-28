@@ -11,6 +11,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Dancing+Script:wght@400..700&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap"
         rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Betania+Patmos&family=Playwrite+BR+Guides&display=swap" rel="stylesheet">
 
     <!--css-->
     <link rel="stylesheet" href="style.css">
@@ -27,7 +30,7 @@
         <section class="header">
             <menu class="menu">
                 <div class="pesquisa">
-                    <a href="#pesquisar" aria-label="Pesquisar"><i class="material-symbols-outlined">search</i></a>
+                    <a href="#search"></a><i class="material-symbols-outlined">search</i></a>
                     <input type="search" placeholder="Pesquisar">
                 </div>
 
@@ -36,7 +39,7 @@
 
                 <nav class="navegador">
                     <a href="#agenda">Agenda</a>
-                    <a href="#compras">shop</a>
+                    <a href="#shop"> shop</a>
                     <a href="#conta"><i class="material-symbols-outlined">person_2</i></a>
                     <a href="#compras"><i class="material-symbols-outlined">shopping_bag</i></a>
 
@@ -106,177 +109,129 @@
 
     </div>
 
-    <!--Banner tuor-->
+    <!--Banner tuor -->
     <section class="escala-show">
-        <img src="/img/Out Now.jpg" alt="Davi Braga em apresentação" class="img-foto">
-        <div class="agenda">
-                <!--
         <div class="tour-header">
-            <p class="tour-subtitle">Ao Vivo</p>
-            <h2 class="tour-title">GENESIS TOUR 2026</h2>
+            <h2>GENESIS TOUR</h2>
         </div>
-    -->
-                <br>
-                <div class="tour-list">
-                    <!-- Show 1 -->
-                    <div class="tour-item">
-                        <div class="tour-date">
-                            <span class="date-day">03</span>
-                            <span class="date-month">OUT</span>
-                        </div>
-                        <div class="tour-location">
-                            <div class="city">São Paulo, SP</div>
-                            <div class="venue">Espaço Unimed</div>
-                        </div>
-                        <div class="tour-action">
-                            <span class="status-badge sold-out">Esgotado</span>
-                            <a href="#" class="btn-ticket disabled">Ingressos</a>
-                        </div>
-                    </div>
-                    <br>
-                    <!-- Show 2 -->
-                    <div class="tour-item">
-                        <div class="tour-date">
-                            <span class="date-day">10</span>
-                            <span class="date-month">OUT</span>
-                        </div>
-                        <div class="tour-location">
-                            <div class="city">Rio de Janeiro, RJ</div>
-                            <div class="venue">Circo Voador</div>
-                        </div>
-                        <div class="tour-action">
-                            <span class="status-badge few-left">Últimos Ingressos</span>
-                            <a href="#" class="btn-ticket">Comprar</a>
-                        </div>
-                    </div>
-                    <br>
 
-                    <!--Show 3-->
-
-                    <div class="tour-item">
-                        <div class="tour-date">
-                            <span class="date-day">17</span>
-                            <span class="date-month">OUT</span>
-                        </div>
-                        <div class="tour-location">
-                            <div class="city">Belo Horizonte, MG</div>
-                            <div class="venue">Autêntica</div>
-                        </div>
-                        <div class="tour-action">
-                            <span class="status-badge available">Disponível</span>
-                            <a href="#" class="btn-ticket">Comprar</a>
-                        </div>
-                    </div>
-                    <br>
-                    <!-- Show 4 -->
-                    <div class="tour-item">
-                        <div class="tour-date">
-                            <span class="date-day">24</span>
-                            <span class="date-month">OUT</span>
-                        </div>
-                        <div class="tour-location">
-                            <div class="city">Curitiba, PR</div>
-                            <div class="venue">Ópera de Arame</div>
-                        </div>
-                        <div class="tour-action">
-                            <span class="status-badge available">Disponível</span>
-                            <a href="#" class="btn-ticket">Comprar</a>
-                        </div>
-                    </div>
-                    <br>
-                    <!-- Show 5 -->
-                    <div class="tour-item">
-                        <div class="tour-date">
-                            <span class="date-day">07</span>
-                            <span class="date-month">NOV</span>
-                        </div>
-                        <div class="tour-location">
-                            <div class="city">Salvador, BA</div>
-                            <div class="venue">Concha Acústica</div>
-                        </div>
-                        <div class="tour-action">
-                            <span class="status-badge available">Disponível</span>
-                            <a href="#" class="btn-ticket">Comprar</a>
-                        </div>
-                    </div>
-                    <br>
-                    <!-- Show 6 -->
-                    <div class="tour-item">
-                        <div class="tour-date">
-                            <span class="date-day">14</span>
-                            <span class="date-month">NOV</span>
-                        </div>
-                        <div class="tour-location">
-                            <div class="city">Recife, PE</div>
-                            <div class="venue">Classic Hall</div>
-                        </div>
-                        <div class="tour-action">
-                            <span class="status-badge available">Em Breve</span>
-                            <a href="#" class="btn-ticket disabled">Aguardar</a>
-                        </div>
-                    </div>
-                    <br>
-                    <!-- Show 7 -->
-                    <div class="tour-item">
-                        <div class="tour-date">
-                            <span class="date-day">21</span>
-                            <span class="date-month">NOV</span>
-                        </div>
-                        <div class="tour-location">
-                            <div class="city">Brasília, DF</div>
-                            <div class="venue">Clube do Choro</div>
-                        </div>
-                        <div class="tour-action">
-                            <span class="status-badge available">Em Breve</span>
-                            <a href="#" class="btn-ticket disabled">Aguardar</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+    
+    
     </section>
 
-    <selection Class="banner2">
-        <img src="/img/154.png" alt="banner2" style="width: 90%; height: auto;" class="img-banner2">
-    </selection>
-
-    <br><br>
-
-    <!-- Adicione mais produtos-->
-    <section class="compras" id="shop">
-        <h2>Loja</h2>
-        <div class="produtos">
-            <div class="produto">
-                <img src="img/album1.jpg" alt="Álbum 1">
-                <h3>Álbum 1</h3>
-                <p>R$ 29,90</p>
-                <button>Comprar</button>
-            </div>
-            <div class="produto">
-                <img src="img/album2.jpg" alt="Álbum 2">
-                <h3>Álbum 2</h3>
-                <p>R$ 39,90</p>
-                <button>Comprar</button>
-            </div>
-            <div class="produto">
-                <img src="img/album3.jpg" alt="Álbum 3">
-                <h3>Álbum 3</h3>
-                <p>R$ 49,90</p>
-                <button>Comprar</button>
-            </div>
-        </div>
-    </section>
-
-    <br><br>
-    <div class="redes-sociais">
-        <h2>Redes Sociais</h2>
-        <ul>
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-        </ul>
+    <div class="mudanças">
+                <li> 
+                <span>Data</span>
+                <span>Cidade / Estado</span>
+                <span>Local</span>
+                <span>Status</span>
+                </li>
     </div>
+
+    <section class="tentiva2">
+        <div class="agenda-show">
+        
+
+            <div class="agenda-item">
+                <span>03/OUT</span>
+                <span>São Paulo, SP</span>
+                <span>Espaço Unimed</span>
+                <span>Ingressos Esgotados</span>
+            </div>
+             <br>
+            <div class="agenda-item">
+                <span>10/OUT</span>
+                <span>Rio de Janeiro, RJ</span>
+                <span>Circo Voador</span>
+                <span>Últimos Ingressos</span>
+            </div>
+                 <br>
+            <div class="agenda-item">
+                <span>17/OUT</span>
+                <span>Belo Horizonte, MG</span>
+                <span>Autêntica</span>
+                <span>Vendas Abertas</span>
+            </div>
+            <br>
+         
+            <div class="agenda-item">
+                <span>24/OUT</span>
+                <span>Curitiba, PR</span>
+                <span>Ópera de Arame</span>
+                <span>Vendas Abertas</span>
+            </div>
+            <br>
+
+            <div class="agenda-item">
+                <span>07/NOV</span>
+                <span>Salvador, BA</span>
+                <span>Concha Acústica</span>
+                <span>Vendas Abertas</span>
+            </div>
+            <br>
+
+            <div class="agenda-item">
+                <span>14/NOV</span>
+                <span>Recife, PE</span>
+                <span>Classic Hall</span>
+                <span>Em Breve</span>
+            </div>
+            <br>
+
+            <div class="agenda-item">
+                <span>21/NOV</span>
+                <span>Brasília, DF</span>
+                <span>Clube do Choro</span>
+                <span>Em Breve</span>
+            </div>
+        </div>
+    </section>
+
+        <br><br>
+
+        <!-- Adicione mais produtos-->
+        <section class="compras" id="shop">
+            <h2 class="texto">Loja</h2>
+            <div class="produto">
+                <img src="/img/Bad Bunny's _DeBI TiRAR MaS FOToS_ Album Cover.jpg" style="height: 100px; width: 100px;"
+                    alt="Álbum 1">
+                <h3><a href="#">Álbum 1</h3></a>
+                <p>R$ 29,90</p>
+                
+            </div>
+            <div class="produto">
+                <img src="/img/Gal Costa - Gal Tropical   (Reedição 2010).jpg" style="height: 100px; width: 100px;"
+                    alt="Álbum 2">
+                <h3><a href="#">Álbum 2</h3></a>
+                <p>R$ 39,90</p>
+                
+            </div>
+            <div class="produto">
+                <img src="/img/SIX_  Duquesa album cover.jpg" style="height: 100px; width: 100px;" alt="Álbum 3">
+                <h3><a href="#">Álbum 3</h3></a>
+                <p>R$ 49,90</p>
+                
+            </div>
+
+        </section>
+
+        <br><br>
+
+        <div class="redes-sociais">
+            <h2>Redes Sociais</h2>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <li>
+            <ul>
+
+            </ul>
+        </li>
+    
 </body>
 
 </html>
