@@ -4,9 +4,12 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none; 
     text-transform: uppercase;
     outline: none;
     transition: 0.3s linear;
+    
+    
 
 }
 
@@ -26,6 +29,7 @@ body {
     min-height: 80vh;
     margin: 0;
     height: 100rem;
+   
 
 }
 
@@ -33,6 +37,7 @@ section {
     padding: 0;
     margin: 0 auto;
     max-width: 1200px;
+   
 }
 
 /* menu */
@@ -42,7 +47,8 @@ section {
     display: flex;
     gap: 0.35rem;
     color: rgb(246, 239, 239);
-    padding: 5%;
+    padding: 0%;
+    
 
 }
 
@@ -52,17 +58,20 @@ input[type="search"] {
     font-size: 16px;
     background-color: rgb(240, 205, 160);
     border-bottom: 1px solid #ccc;
+    
 
 }
 
-.header button{
+.header button {
     background-color: transparent;
     color: rgb(234, 219, 219);
     border: none;
 }
-.header img{
-    position:relative;
+
+.header img {
+
     justify-content: center;
+    margin-left: 9%;
 }
 
 .navegador {
@@ -92,6 +101,7 @@ input[type="search"] {
     justify-content: space-between;
     margin-right: 4%;
     margin-top: 1%;
+   
 
 }
 
@@ -112,17 +122,17 @@ input[type="search"] {
     margin: 4rem;
     padding: 1.5rem;
     border-radius: 30px;
+    
 }
 
-.letra {
+.banners h1 {
     display: flex;
-    align-items: self-end;
+    text-align: center;
     justify-content: center;
     font-size: 50px;
     color: aliceblue;
-    font-family: Verdana, "Pacifico", cursive;
+    
 }
-
 
 .imgd {
     margin: 20px;
@@ -141,6 +151,13 @@ input[type="search"] {
     align-items: center;
 }
 
+.streames a :hover{
+    background-color: #a1e25ca3;
+    border-radius: 20px;
+    padding-bottom: 0.5rem;
+
+}
+
 
 /* 2 Banner com as datas de shows + Foto conceito */
 .escala-show {
@@ -150,7 +167,6 @@ input[type="search"] {
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(30px, 10fr));
     border-radius: 30px;
-
 
 }
 
@@ -173,10 +189,7 @@ input[type="search"] {
     border-radius: 30px;
     color: #fffbfb;
     margin-top: 80px;
-
-
 }
-
 
 span {
     margin: 50px;
@@ -191,14 +204,35 @@ span {
     background-color: #2a762c51;
 
 }
-.agenda-item a :hover{
+
+.agenda-item a :hover {
     color: #0dcc29ec;
     padding-bottom: 0.5rem;
     font-size: 1.2rem;
 
 }
 
+.agenda-item1 a {
+    color: #ffffff;
+    background-color: #ff3f3f51;
 
+}
+
+.agenda-item1 a :hover {
+    color: #252212ec;
+   
+}
+
+.agenda-item2 a {
+ color: #ffffff;
+ background-color: #76582a51;
+
+}
+.agenda-item2 a :hover {
+    color: #cca90dec;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
 .tour-header {
     margin-left: 0%;
     justify-content: center;
@@ -214,9 +248,8 @@ span {
     margin-left: 1%;
     color: #d9e5dabd;
     font-size: 50px;
-   
-}
 
+}
 
 
 .text h2 {
@@ -224,11 +257,13 @@ span {
     margin: 0;
     line-height: 1.2;
     font-size: 30px;
-   margin-top: 1%;
-   margin-right: 10%;
+    margin-top: 1%;
+    margin-right: 10%;
 }
 
-}/*nunca deletar esse erro ele fez tudo ficar no lugar*/
+}
+
+/*nunca deletar esse erro ele fez tudo ficar no lugar*/
 
 .agenda-show {
     display: flex;
@@ -239,13 +274,12 @@ span {
 
 }
 
-.risc {
+.risc a {
 
     filter: blur(0.5px);
     background-color: #ed0e0e51;
 
 }
-
 
 .agenda-item {
     font-size: 17px;
@@ -255,32 +289,117 @@ span {
 
 
 /* Shop */
-.compras {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
 
+/* Container que alinha os produtos lado a lado */
+.container-produtos {
+  display: flex;
+  flex-wrap: wrap;       /* Se não couber mais na linha, quebra para a de baixo */
+  gap: 20px;             /* Espaço entre cada card de produto */
+  justify-content: center; /* Centraliza os itens na tela */
+  padding: 20px 0;
 }
 
-
+/* Card individual do produto */
 .produto {
-    margin-left: 3%;
-    margin-top: -50px;
-
-
+  border-radius: 8px;
+  padding: 15px;               /* Padding uniforme no card */
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+  /* Necessário para o backdrop-filter funcionar corretamente */
+  background-color: rgba(243, 199, 139, 0.4); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  
+  /* Garante que nada transborde as bordas do card */
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.produto a {
-    color: black;
+/* Ajuste das imagens dentro dos cards */
+.produto img {
+  display: block;              /* Remove o espaço em branco abaixo da imagem */
+  width: 100%;                 /* Ocupa exatamente 100% da largura do container */
+  height: auto;                /* Deixa o aspect-ratio controlar a altura */
+  aspect-ratio: 1 / 1;         /* Quadrado perfeito */
+  object-fit: cover;           /* Preenche o quadrado sem distorcer */
+  border-radius: 6px;          /* Opcional: arredonda levemente os cantos da foto */
+  margin: 0 auto;              /* Centraliza perfeitamente a imagem sem empurrar as laterais */
+}
+
+/* Estilo do título e links */
+.produto h3 {
+  font-size: 1rem;
+  margin: 10px 0 5px 0;
+}
+
+.produto h3 a {
+  text-decoration: none;
+  color: #333;
+}
+
+.produto h3 a:hover {
+  color: #007bff;
+}
+
+/* Estilo do preço */
+.produto p {
+  font-weight: bold;
+  color: #2e7d32;
+  margin: 0;
+}
+
+.compras h2 {
+  margin-top: 10px;      /* Diminua este valor se quiser subir mais o título */
+  margin-bottom: 20px;   /* Diminua para aproximar o título dos produtos */
+  font-size: 2rem;       /* Tamanho da fonte */
+  color: #ffffff;
+}
+
+/* Reduz o espaçamento do topo do container dos produtos */
+.container-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content:center;
+    /* Reduzido o padding superior de 20px para 10px */
+}
+
+
+/* RODAPÉ*/
+footer{
+    background-color: #f1f672bd;
     text-align: center;
+    
+}
+.ouça{
+    font-size: 20px;
+    list-style: none;
+
+    
+}
+.redes-sociais{ 
+  gap: 16px;              
+  justify-content: center;
+  margin-top: 3rem;      
+ 
+}
+
+.gh{
+  display: flex;          /* Coloca os itens na mesma linha */
+  gap: 16px;              /* Espaçamento entre cada item */
+  list-style: none;  
+  justify-content: center;     /* Remove as bolinhas da lista */
+  
+}
+.gh a{
+    color: #f4e5e5;
+    
+}
+.gh i{
+    font-size: 50px;
+
 
 }
 
-.texto {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30%;
-    margin-left: 1%;
-    color: #ddebde;
-}
