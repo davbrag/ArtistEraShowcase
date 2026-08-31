@@ -41,19 +41,28 @@ section {
 .pesquisa {
     display: flex;
     gap: 0.35rem;
-    color: rgb(254, 254, 254);
+    color: rgb(246, 239, 239);
     padding: 5%;
 
 }
 
 input[type="search"] {
-
     border: none;
     border-radius: 5px;
     font-size: 16px;
     background-color: rgb(240, 205, 160);
     border-bottom: 1px solid #ccc;
 
+}
+
+.header button{
+    background-color: transparent;
+    color: rgb(234, 219, 219);
+    border: none;
+}
+.header img{
+    position:relative;
+    justify-content: center;
 }
 
 .navegador {
@@ -64,14 +73,14 @@ input[type="search"] {
 }
 
 .navegador a {
-    color: black;
+    color: rgb(243, 231, 231);
     font-size: 16px;
     font-weight: bold;
     margin: 0 1%;
 }
 
 .navegador a:hover {
-    color: #11f04d;
+    color: #e7b50e;
     padding-bottom: 0.5rem;
     font-size: 1.3rem;
 
@@ -81,7 +90,8 @@ input[type="search"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 9%;
+    margin-right: 4%;
+    margin-top: 1%;
 
 }
 
@@ -91,11 +101,7 @@ input[type="search"] {
     font-weight: bold;
 }
 
-.img-logo {
-    margin-top: 10px;
-    justify-content: center center;
 
-}
 
 /* 1 banner de divulgação do album */
 
@@ -114,7 +120,7 @@ input[type="search"] {
     justify-content: center;
     font-size: 50px;
     color: aliceblue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, "Pacifico", cursive;
 }
 
 
@@ -185,6 +191,12 @@ span {
     background-color: #2a762c51;
 
 }
+.agenda-item a :hover{
+    color: #0dcc29ec;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+
+}
 
 
 .tour-header {
@@ -202,9 +214,21 @@ span {
     margin-left: 1%;
     color: #d9e5dabd;
     font-size: 50px;
+   
+}
 
+
+
+.text h2 {
+    font-weight: 40px;
+    margin: 0;
+    line-height: 1.2;
+    font-size: 30px;
+   margin-top: 1%;
+   margin-right: 10%;
 }
-}
+
+}/*nunca deletar esse erro ele fez tudo ficar no lugar*/
 
 .agenda-show {
     display: flex;
@@ -221,7 +245,7 @@ span {
     background-color: #ed0e0e51;
 
 }
-}
+
 
 .agenda-item {
     font-size: 17px;
