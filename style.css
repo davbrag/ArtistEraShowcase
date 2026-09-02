@@ -18,8 +18,8 @@
 
 body {
     background-color: #ddebde;
-    background-image: linear-gradient(rgba(100, 120, 8, 0.35), rgba(17, 106, 7, 0.15)),
-        url("/img/154.png");
+    background-image: linear-gradient(rgba(14, 15, 14, 0.35), rgb(22, 23, 21)),
+        url("");
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -116,7 +116,7 @@ input[type="search"] {
 }
 
 .imgd {
-    margin: 20px;
+   
     display: flex;
     justify-self: center;
     align-items: center;
@@ -127,13 +127,17 @@ input[type="search"] {
     margin: 0.5rem;
     justify-content: flex-end; 
     align-items: center;
+    
 }
 
 
+
 .streames a:hover {
-    background-color: #a1e25ca3;
-    border-radius: 20px;
+    color: #f0daae;
+    Background-color: #f0daae;
+    BORDER-RADIUS: 15PX;
     padding-bottom: 0.5rem;
+
 }
 
 /* 2. BANNER COM AS DATAS DE SHOWS + FOTO CONCEITO */
@@ -144,13 +148,29 @@ input[type="search"] {
     align-items: center;
     width: 100vw;               
     position: relative;
-    background-image: url("/img/Mudar\ de\ vida\ por\ favor.png");
+    background-image: url("/");
     background-size: cover;
     background-position: center center;
-    
     background-repeat: no-repeat;
     min-height: 600px;          /* Altura para destacar a imagem no fundo */
     padding: 3rem 1rem;
+}
+
+.tour-header {
+    margin-left: 0%;
+    justify-content: center;
+   
+}
+
+.tentiva2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 30px;
+    color: #fffbfb;
+    width: 100%
+  
 }
 
 .lost {
@@ -162,22 +182,40 @@ input[type="search"] {
     grid-area: 1 / 1;
 }
 
-.tentiva2 {
+
+.agenda-show {
     display: flex;
+    flex-direction: column;    
+    align-items: center;
+    gap: 0rem;                
+    width: 100%;
+    
+}
+
+.text {
+   display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-    border-radius: 30px;
-    color: #fffbfb;
-    width: 100%
+    color: #e4eeeebd;
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+.text h2 {
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.2;
+    font-size: 30px;
+    margin-top: 1%;
+    margin-right: 10%;
 }
 
 
 span {
     margin: 50px;
     margin-bottom: 1%;
+    color: #efe5e5;
     
-    color: #111111;
 }
 
 .agenda-item a {
@@ -197,8 +235,6 @@ span {
     background-color: #ff3f3f51;
 }
 
-
-
 .agenda-item1 a:hover {
     color: #252212ec;
 }
@@ -214,37 +250,6 @@ span {
     font-size: 1.2rem;
 }
 
-.tour-header {
-    margin-left: 0%;
-    justify-content: center;
-}
-
-.text {
-  display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #d9e5dabd;
-    font-size: 40px;
-    margin-bottom: 1rem;
-}
-
-.text h2 {
-    font-weight: 400;
-    margin: 0;
-    line-height: 1.2;
-    font-size: 30px;
-    margin-top: 1%;
-    margin-right: 10%;
-}
-
-
-.agenda-show {
-    display: flex;
-    flex-direction: column;    
-    align-items: center;
-    gap: 0rem;                
-    width: 100%;
-}
 
 .risc a {
     filter: blur(0.5px);
@@ -254,6 +259,7 @@ span {
 .agenda-item {
     font-size: 17px;
     border: #000;
+    margin-top: 7px;
 }
 
 /* SHOP */
@@ -264,15 +270,17 @@ span {
     gap: 20px;
     justify-content: center;
     padding: 10px 0;
+    background-image: url();
+    background-size: cover;
 }
 
 .produto {
-    border-radius: 8px;
+    border-radius: 2px;
     padding: 15px;
     width: 200px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: rgba(243, 199, 139, 0.4);
+    box-shadow: 0 2px 5px rgba(109, 68, 68, 0.1);
+    
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-sizing: border-box;
@@ -320,6 +328,7 @@ span {
 /* RODAPÉ */
 
 footer {
+    margin-top: 2rem;
     background-color: #fbfbfbd8;
     text-align: center;
     padding: 20px;
@@ -347,16 +356,39 @@ footer {
     margin-bottom: 20px;
     justify-content: center;
 }
+.form-newsletter input[type="email"] {
+    padding: 10px;
+    border: 1px solid #f0daae;
+    color: #191818;
+    border-radius: 4px;
+    width: 250px;
+}
+.form-newsletter button {
+    padding: 10px 20px;
+    background-color: #f0daae;
+    color: #191818;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
 .ouça {
     font-size: 20px;
     list-style: none;
+    margin-top: 2rem;
+
+}
+.ouça a :hover {
+    color: #f0daae;
+    Background-color: #f0daae;
+    BORDER-RADIUS: 15PX;
+    padding-bottom: 0.5rem;
 }
 
 .redes-sociais {
     gap: 16px;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .gh {
@@ -368,8 +400,20 @@ footer {
 
 .gh a {
     color: #000000;
+    padding-bottom: 0.5rem;
+}
+.gh a :hover {
+    color: #101010;
+    Background-color: #f0daae;
+    BORDER-RADIUS: 15PX;
+    padding-bottom: 0.5rem;
 }
 
 .gh i {
     font-size: 50px;
+}
+.copyright{
+    margin-top: 2rem;
+    font-size: 13px;
+    color: #666;
 }
