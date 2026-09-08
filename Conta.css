@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    outline: none;
+    
+}
+
+body {
+    background-color: #ddebde;
+    background-image: linear-gradient(rgba(142, 150, 57, 0.434), rgba(35, 36, 30, 0.549)),
+        url("/img/1577.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-top: 9%;
+    /* borda
+    border: 1px solid #6a64dd;
+    border-radius: 2px;
+    padding: 15px;
+    text-align: center;
+    backdrop-filter: blur(15px);
+    box-sizing: border-box;
+    overflow: hidden;*/
+}
+
+img {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 17px;
+}
+
+section h1 {
+    color: #252527;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: "Indie Flower", cursive;
+
+}
+
+section input[type="email"],
+section input[type="password"] {
+    padding: 10px;
+    border: 1px solid #f0daae;
+    color: #191818;
+    border-radius: 4px;
+    width: 250px;
+}
+
+section p {
+    color: #fafafc;
+    font-size: 10px;
+    margin-top: 15px;
+    margin-right: 44px;
+    text-align: end;
+    font-family: 'Arial', sans-serif;
+}
+
+section input[type="submit"] {
+    color: #252527;
+    background-color: #9e68e8;
+    border: none;
+    cursor: pointer;
+    background-color: #ebdfdf;
+    border-radius: 4px;
+    width: 110px;
+    height: 30px;
+}
+
+.form-text {
+    color: #fafafc;
+    font-size: 10px;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 10%;
+   
+}
+
+button{
+    display: flex;
+    background:transparent;
+    border:none;
+    position: relative;
+    top: 6px;
+    color: #dcdce6;
+    
+}

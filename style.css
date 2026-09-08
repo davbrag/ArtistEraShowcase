@@ -167,8 +167,6 @@ input[type="search"]::placeholder {
 
 }
 
-
-
 .streames a:hover {
     color: #f0daae;
     Background-color: #f0daae;
@@ -484,3 +482,4 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+
