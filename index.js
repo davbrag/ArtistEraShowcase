@@ -1,3 +1,5 @@
+
+/* animação de scroll */
 const myObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -13,3 +15,5 @@ const myObserver = new IntersectionObserver((entries) => {
 const elements = document.querySelectorAll('section');
 
 elements.forEach((element) => myObserver.observe(element));
+
+/* olho da senha */
