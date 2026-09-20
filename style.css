@@ -37,7 +37,6 @@ section {
     min-height: 5vh;
     filter: blur(15px);
     transition: all 1s;
-
 }
 
 /* Efeito de transição para elementos com a classe "show"*/
@@ -112,12 +111,58 @@ input[type="search"]::placeholder {
     font-size: 1.3rem;
 }
 
+.cart-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-count {
+    position: absolute;
+    top: -80px;
+    right: -60px;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #251bae33;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+   
+}
+
+.cart-notification {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    background: rgba(17, 17, 17, 0.95);
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(18px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 999;
+}
+
+.cart-notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 4%;
-    margin-top: 1%;
+    margin-right: -5%;
+    margin-top: 2%;
 }
 
 .menu a {
@@ -309,6 +354,8 @@ span {
     margin-top: 7px;
 }
 
+
+
 /* SHOP */
 
 .container-produtos {
@@ -335,21 +382,9 @@ span {
 
 }
 
-.compras h2 {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 2rem;
-    color: #090909;
-    text-align: center;
-    font-family: "Indie Flower", cursive;
-    font-weight: 400;
-    font-style: normal;
-
-
-}
 
 .produto img {
-    display: block;
+    display: grid;
     width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
@@ -366,6 +401,7 @@ span {
 .produto h3 a {
     text-decoration: none;
     color: #333;
+    justify-content: center;
 }
 
 .produto h3 a:hover {
@@ -376,6 +412,28 @@ span {
     font-weight: bold;
     color: #2e7d32;
     margin: 0;
+}
+
+.produto a {
+    color: #000;
+    display:flex;
+    justify-content:flex-end;
+    
+
+
+}
+
+.compras h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #090909;
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+
 }
 
 
