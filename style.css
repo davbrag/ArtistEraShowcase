@@ -55,6 +55,19 @@ section {
 
 
 /* MENU */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: -5%;
+    margin-top: 2%;
+}
+
+.menu a {
+    color: rgb(245, 232, 232);
+    font-size: 16px;
+    font-weight: bold;
+}
 
 .pesquisa {
     display: flex;
@@ -99,28 +112,31 @@ input[type="search"]::placeholder {
 }
 
 .navegador a {
-    color: rgb(243, 231, 231);
+    color: rgb(233, 220, 220);
     font-size: 16px;
     font-weight: bold;
     margin: 0 1%;
 }
 
 .navegador a:hover {
-    color: #e7b50e;
+    color: #639fdf;
     padding-bottom: 0.5rem;
     font-size: 1.3rem;
 }
+
+/*Notificação adição*/
 
 .cart-button {
     position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .cart-count {
     position: absolute;
-    top: -80px;
+    top: -60px;
     right: -60px;
     min-width: 20px;
     height: 20px;
@@ -132,6 +148,7 @@ input[type="search"]::placeholder {
     color: #fff;
     font-size: 10px;
     font-weight: 700;
+    
    
 }
 
@@ -140,6 +157,12 @@ input[type="search"]::placeholder {
     right: 24px;
     bottom: 24px;
     background: rgba(17, 17, 17, 0.95);
+    height: 5%;
+    width: 20rem;
+    align-items: center;
+    justify-content: center;
+    font-family: "Indie Flower", cursive;
+    display: flex;
     color: #fff;
     border-radius: 12px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
@@ -157,19 +180,6 @@ input[type="search"]::placeholder {
     transform: translateY(0);
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: -5%;
-    margin-top: 2%;
-}
-
-.menu a {
-    color: rgb(245, 232, 232);
-    font-size: 16px;
-    font-weight: bold;
-}
 
 /* 1. BANNER DE DIVULGAÇÃO DO ÁLBUM */
 
@@ -358,6 +368,19 @@ span {
 
 /* SHOP */
 
+.compras h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #090909;
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
 .container-produtos {
     display: flex;
     flex-wrap: wrap;
@@ -366,19 +389,19 @@ span {
     padding: 10px 0;
     background-image: url();
     background-size: cover;
+   
 }
 
 .produto {
-    border-radius: 2px;
+    margin-left: 15px;
     padding: 15px;
     width: 200px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(109, 68, 68, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     box-sizing: border-box;
     overflow: hidden;
+    border-radius: 15px;
     font-family: "Elms Sans", sans-serif;
+   
 
 }
 
@@ -396,12 +419,14 @@ span {
 .produto h3 {
     font-size: 1rem;
     margin: 10px 0 5px 0;
+    margin-bottom: 10px;
 }
 
 .produto h3 a {
     text-decoration: none;
     color: #333;
     justify-content: center;
+    
 }
 
 .produto h3 a:hover {
@@ -412,29 +437,28 @@ span {
     font-weight: bold;
     color: #2e7d32;
     margin: 0;
+     margin-bottom: 10px;
+   
 }
 
 .produto a {
     color: #000;
     display:flex;
     justify-content:flex-end;
-    
-
 
 }
+  
+.produto button{
 
-.compras h2 {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 2rem;
-    color: #090909;
-    text-align: center;
-    font-family: "Indie Flower", cursive;
-    font-weight: 400;
-    font-style: normal;
-
-
+    background-color:rgb(24, 24, 24);
+    border:none;
+    border-radius: 6px;
+    font-family: "Elms Sans", sans-serif;
+    height: 40px;
+    width: 140px;
+    color: #ddebde;
 }
+
 
 
 
