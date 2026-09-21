@@ -11,7 +11,7 @@ const myObserver = new IntersectionObserver((entries) => {
 }, {
     threshold: 0.2
 });
-//Todos so Elementos..
+//Notificação 
 const elements = document.querySelectorAll('section');
 
 elements.forEach((element) => myObserver.observe(element));
@@ -48,5 +48,7 @@ document.querySelectorAll('.cart-btn').forEach((button) => {
         showCartNotification(productName);
     });
 });
+
+
 
 /* olho da senha */
