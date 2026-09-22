@@ -1,6 +1,6 @@
 *{
  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- background-color: rgb(241, 243, 246);
+ background-color:rgb(187, 211, 238);
  margin: 0;
  max-width: 1000vh;
 
@@ -32,4 +32,28 @@ div button {
     height: 80px;
     border-radius: 10px;
     
+}
+div h1{
+    position: relative;
+    text-align: center;
+    margin-top: -40px;
+
+}  
+
+.recado-imga span{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    left: 44%;
+    bottom: -5%;
+}
+.recado-imga {
+     position: relative; 
+     display: inline-block; 
+}
+
+.recado-imga img{
+    left: 35%;   
+   
 }
