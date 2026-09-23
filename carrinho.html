@@ -1,33 +1,94 @@
 <!DOCTYPE html>
 <html lang="br-pr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back" />
-    <link rel="stylesheet" href="carrinho.css">
-    
-    
-    <title>Sacola</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back" />
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=delete" />
+
+  <link rel="stylesheet" href="carrinho.css">
+
+
+  <title>Sacola</title>
 </head>
+
 <body>
-    <section>
-        <a href="index.html"><span class="material-symbols-outlined">
-arrow_back
-</span></a>
-      <div class="seucarrinho">
-        <h1>Sua Sacola</h1>
+  <section class="primeira">
+    <a href="index.html"><span class="material-symbols-outlined">
+        arrow_back
+      </span></a>
+    <div class="seucarrinho">
+      <h1>Sua Sacola</h1>
+    </div>
+
+    <div class="recado-imga">
+      <img src="/img/sacola vazia fundo transparente.png" alt="" style="height: auto; width:30% ;">
+
+      <div class="alert">
+        <span>Sua sacola está vazia !</span>
+      </div>
+    </div>
+
+    <section class="Finalizar-Compra">
+      <div class="finalizeCompra">
+
+        <li><img src="/img/boné.avif" alt="Boné" style="height: 180px; width: auto;">
+          <h3>Boné Streetwear</h3>
+          <button class="material-symbols-outlined">
+            delete
+          </button>
+
+          <select class="form-select" aria-label="Default select example">
+            <option value="1">P</option>
+            <option value="2">M</option>
+            <option value="3">G</option>
+            <option value="4">GG</option>
+          </select>
+
+          <div class="quantidade">
+            <button class="btn-qtd" id="diminuir">-</button>
+            <span id="valor-qtd">1</span>
+            <button class="btn-qtd" id="aumentar">+</button>
+          </div>
+
+          <p>R$ 59,90</p>
+        </li>
+
+
       </div>
 
-      <div class="recado-imga">
-        <span>Sua sacola está vazia !</span>
-        <img src="/img/sacola vazia fundo transparente.png" alt="" style="height: auto; width:30% ;">
+      <div class="finalizeCompra">
+
+        <li><img src="/img/capa.png" alt="Boné" style="height: 180px; width: auto;">
+          <h3>Album</h3>
+          <button class="material-symbols-outlined">
+            delete
+          </button>
+
+          <div class="quantidade">
+            <button class="btn-qtd" id="diminuir">-</button>
+            <span id="valor-qtd">1</span>
+            <button class="btn-qtd" id="aumentar">+</button>
+          </div>
+
+          <p>R$ 100,90</p>
+        </li>
+
       </div>
-      <div>
+
+      <div class="butaoCompra">
         <button>Finalizar Compra</button>
       </div>
+    </section>
 
-</section>
+  </section>
   <script src="index.js"></script>
 </body>
+
 </html>
