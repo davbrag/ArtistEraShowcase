@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="br-pr">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -27,18 +27,101 @@
       <h1>Sua Sacola</h1>
     </div>
 
-    <div class="recado-imga">
-      <img src="/img/sacola vazia fundo transparente.png" alt="" style="height: auto; width:30% ;">
+    <div class="recado-imga" id="sacola">
+      <img id="sacolavzia" src="/img/sacola vazia fundo transparente.png" alt="" style="height: auto; width:30% ;">
 
       <div class="alert">
-        <span>Sua sacola está vazia !</span>
+        <span>Sua sacola está vazia!</span>
       </div>
     </div>
 
     <section class="Finalizar-Compra">
       <div class="finalizeCompra">
 
-        <li><img src="/img/boné.avif" alt="Boné" style="height: 180px; width: auto;">
+        <li><img src="/img/knfn.jpeg" alt="Vinil" style="height: 180px; width: auto;">
+          <h3>Vinil</h3>
+          <button class="material-symbols-outlined">
+            delete
+          </button>
+
+          <div class="quantidade">
+            <button class="btn-qtd" type="button" data-action="diminuir">-</button>
+            <span class="valor-qtd">1</span>
+            <button class="btn-qtd" type="button" data-action="aumentar">+</button>
+          </div>
+
+          <p>R$ 59,90</p>
+        </li>
+
+
+      </div>
+
+      <div class="finalizeCompra">
+
+        <li><img src="/img/capa.png" alt="CD" style="height: 180px; width: auto;">
+          <h3>CD</h3>
+          <button class="material-symbols-outlined">
+            delete
+          </button>
+
+          <div class="quantidade">
+            <button class="btn-qtd" type="button" data-action="diminuir">-</button>
+            <span class="valor-qtd">1</span>
+            <button class="btn-qtd" type="button" data-action="aumentar">+</button>
+          </div>
+
+          <p>R$ 100,90</p>
+        </li>
+
+      </div>
+
+      <div class="finalizeCompra">
+
+        <li><img src="/img/cosmos_300629345.jpeg" alt="Vinil edição especial" style="height: 180px; width: auto;">
+          <h3>Vinil edição especial</h3>
+          <button class="material-symbols-outlined">
+            delete
+          </button>
+
+          <div class="quantidade">
+            <button class="btn-qtd" type="button" data-action="diminuir">-</button>
+            <span class="valor-qtd">1</span>
+            <button class="btn-qtd" type="button" data-action="aumentar">+</button>
+          </div>
+
+          <p>R$ 100,90</p>
+        </li>
+
+      </div>
+
+      <div class="finalizeCompra">
+
+        <li><img src="/img/Blusa.jpg" alt="Camiseta" style="height: 180px; width: auto;">
+          <h3>Camiseta</h3>
+          <button class="material-symbols-outlined">
+            delete
+          </button>
+
+          <select class="form-select" aria-label="Default select example">
+            <option value="1">P</option>
+            <option value="2">M</option>
+            <option value="3">G</option>
+            <option value="4">GG</option>
+          </select>
+
+          <div class="quantidade">
+            <button class="btn-qtd" type="button" data-action="diminuir">-</button>
+            <span class="valor-qtd">1</span>
+            <button class="btn-qtd" type="button" data-action="aumentar">+</button>
+          </div>
+
+          <p>R$ 59,90</p>
+        </li>
+
+      </div>
+      <div class="finalizeCompra">
+
+        <li><img src="/img/boné.avif" alt="Boné Streetwear" style="height: 180px; width: auto;">
           <h3>Boné Streetwear</h3>
           <button class="material-symbols-outlined">
             delete
@@ -52,35 +135,72 @@
           </select>
 
           <div class="quantidade">
-            <button class="btn-qtd" id="diminuir">-</button>
-            <span id="valor-qtd">1</span>
-            <button class="btn-qtd" id="aumentar">+</button>
+            <button class="btn-qtd" type="button" data-action="diminuir">-</button>
+            <span class="valor-qtd">1</span>
+            <button class="btn-qtd" type="button" data-action="aumentar">+</button>
           </div>
 
           <p>R$ 59,90</p>
         </li>
 
-
       </div>
 
       <div class="finalizeCompra">
 
-        <li><img src="/img/capa.png" alt="Boné" style="height: 180px; width: auto;">
-          <h3>Album</h3>
+        <li><img src="/img/boné.avif" alt="Blusa de moletom" style="height: 180px; width: auto;">
+          <h3>Blusa Moletom</h3>
           <button class="material-symbols-outlined">
             delete
           </button>
 
+          <select class="form-select" aria-label="Default select example">
+            <option value="1">P</option>
+            <option value="2">M</option>
+            <option value="3">G</option>
+            <option value="4">GG</option>
+          </select>
+
           <div class="quantidade">
-            <button class="btn-qtd" id="diminuir">-</button>
-            <span id="valor-qtd">1</span>
-            <button class="btn-qtd" id="aumentar">+</button>
+            <button class="btn-qtd" type="button" data-action="diminuir">-</button>
+            <span class="valor-qtd">1</span>
+            <button class="btn-qtd" type="button" data-action="aumentar">+</button>
           </div>
 
-          <p>R$ 100,90</p>
+          <p>R$ 59,90</p>
         </li>
 
       </div>
+
+
+      <div class="finalizeCompra">
+
+        <li><img src="/img/boné.avif" alt="Calça de moletom" style="height: 180px; width: auto;">
+          <h3>Calça Moletom</h3>
+          <button class="material-symbols-outlined">
+            delete
+          </button>
+
+          <select class="form-select" aria-label="Default select example">
+            <option value="1">P</option>
+            <option value="2">M</option>
+            <option value="3">G</option>
+            <option value="4">GG</option>
+          </select>
+
+          <div class="quantidade">
+            <button class="btn-qtd" type="button" data-action="diminuir">-</button>
+            <span class="valor-qtd">1</span>
+            <button class="btn-qtd" type="button" data-action="aumentar">+</button>
+          </div>
+
+          <p>R$ 59,90</p>
+        </li>
+
+      </div>
+
+
+
+
 
       <div class="butaoCompra">
         <button>Finalizar Compra</button>

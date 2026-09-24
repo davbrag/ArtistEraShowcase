@@ -2,19 +2,17 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
-}
-
-body {
-    min-width: 320px;
-    min-height: 100vh;
-    background: #f4f6f8;
-    color: #1d252c;
-    display: flex;
-    
    
 }
 
-/*Section Principal */
+body {
+    min-height: 100vh;
+    background: #f4f6f8;
+    color: #1d252c;
+    width: 100%;
+}
+
+/* Seção principal */
 
 .primeira {
     width: min(1100px, calc(100% - 32px));
@@ -25,8 +23,8 @@ body {
 
 .primeira a {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content: start;
     width: 40px;
     height: 40px;
     margin: 0 0 20px;
@@ -49,12 +47,11 @@ body {
 }
 
 
-
+/* Sacola vazia */
 .recado-imga {
     display: flex;
-    position: relative;
-    left: 20%;
-
+    align-items: center;
+    justify-content: center;
 }
 
 .recado-imga img {
@@ -62,7 +59,7 @@ body {
     position: relative;
     align-items: center;
     top: 90%;
-    left: 16%;
+    
 
 
 }
@@ -70,9 +67,10 @@ body {
 .alert span {
     display: flex;
     position: relative;
-    top: 90%;
+    bottom: 100%;
     right: 40%;
-    justify-items: center center;
+    width: 100%;
+    
     font-family: "Indie Flower", cursive;
 
 
@@ -80,16 +78,11 @@ body {
 }
 
 .Finalizar-Compra {
-    display: flex;
-    position: relative;
-    grid-template-columns: minmax(0, 5fr) 300px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
     align-items: start;
-    justify-content: center ;
+    justify-content: center;
     gap: 28px;
-    left: 12%;
-    flex-direction: column;
-   
-    
 
 }
 
@@ -99,12 +92,12 @@ body {
     border-radius: 12px;
     background: #ffffff;
     box-shadow: 0 8px 24px rgba(29, 37, 44, 0.08);
-    width: 70%;
+    width: 100%;
 }
 
 .finalizeCompra li {
     display: grid;
-    grid-template-columns: 132px minmax(0, 1fr) auto;
+    grid-template-columns: 170px minmax(0, 1fr) auto;
     grid-template-areas: "image name delete" "image size size" "image quantity price";
     align-items: center;
     gap: 12px 20px;
@@ -124,10 +117,8 @@ body {
 }
 
 .finalizeCompra h3 {
-    position: relative;
     align-self: start;
     font-size: 1.05rem;
-    left: 11%;
 }
 
 .finalizeCompra li>.material-symbols-outlined {
@@ -156,7 +147,6 @@ body {
     border-radius: 6px;
     background: #ffffff;
     color: #1d252c;
-    left: 10%;
 
 }
 
@@ -167,7 +157,6 @@ body {
     align-items: center;
     justify-self: start;
     gap: 12px;
-    left: 12%;
 }
 
 .btn-qtd {
@@ -194,24 +183,26 @@ body {
     color: #1d252c;
     font-size: 1.05rem;
     font-weight: 700;
+   
 }
 
 .butaoCompra {
     display: flex;
-    position: relative;
-    margin-top: 10%;
-    left: 20%;
-    height: 10%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     padding: 24px;
     border: 1px solid #dce2e7;
     border-radius: 12px;
-    background: #ffffff;
-    box-shadow: 0 7px 24px rgba(29, 37, 44, 0.08);
+    background-color: #f6f8fa;
+    box-shadow: 0 4px 24px rgba(29, 37, 44, 0.08);
+
 }
 
 .butaoCompra button {
-   
-    min-height: 52px;
+
+    width: 40%;
+    min-height:52px;
     border: 0;
     border-radius: 7px;
     background: #111820;
@@ -222,22 +213,12 @@ body {
 
 }
 
-.butãoCompra button:hover {
+.butaoCompra button:hover {
     background: #2f3b46;
 }
 
-@media (max-width: 760px) {
-    .Finalizar-Compra {
-        grid-template-columns: 1fr;
-    }
-
-    .butãoCompra {
-        order: -1;
-    }
-}
-
 @media (max-width: 480px) {
-    body>section.primeira {
+    .primeira {
         width: calc(100% - 20px);
         padding-top: 14px;
     }
