@@ -183,30 +183,33 @@ input[type="search"]::placeholder {
 /* 1. BANNER DE DIVULGAÇÃO DO ÁLBUM */
 
 .banners {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     margin: 4rem;
-    padding: 1.5rem;
+    padding: 1.7rem;
+    width: 100%;
+    margin-bottom: 20%;
 
 }
 
 .banners h1 {
     display: flex;
-    text-align: center;
-    justify-content: center;
+    text-align:end;
+    justify-content:flex-end;
     font-size: 50px;
     color: aliceblue;
     /* fonte*/
     font-family: "Indie Flower", cursive;
     font-weight: 400;
     font-style: normal;
+    position: relative;
+    right: 15%;
 }
 
 
 
 .imgd {
-
     display: flex;
     justify-self: center;
     align-items: center;
@@ -217,6 +220,8 @@ input[type="search"]::placeholder {
     margin: 0.5rem;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
+    left: 30%;
 
 }
 

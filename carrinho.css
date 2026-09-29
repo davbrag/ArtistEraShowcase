@@ -12,7 +12,7 @@ body {
     width: 100%;
 }
 
-/* Seção principal */
+/* Sesão principal */
 
 .primeira {
     width: min(1100px, calc(100% - 32px));
@@ -49,33 +49,38 @@ body {
 
 /* Sacola vazia */
 .recado-imga {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
 
-.recado-imga img {
+.recado-imga.visivel {
     display: flex;
+    min-height: 45vh;
     position: relative;
+}
+
+.recado-imga .alert {
+    font-size: 2rem;
+    text-align: center;
     align-items: center;
-    top: 90%;
-    
 
 
 }
+
+[hidden] {
+    display: none !important;
+}
+
 
 .alert span {
     display: flex;
     position: relative;
-    bottom: 100%;
-    right: 40%;
     width: 100%;
-    
     font-family: "Indie Flower", cursive;
-
-
-
 }
+
+/*lista de Compras*/
 
 .Finalizar-Compra {
     display: grid;
@@ -86,13 +91,17 @@ body {
 
 }
 
+#listaCarrinho {
+    display: contents;
+}
+
 .finalizeCompra {
     overflow: hidden;
     border: 1px solid #dce2e7;
     border-radius: 12px;
     background: #ffffff;
     box-shadow: 0 8px 24px rgba(29, 37, 44, 0.08);
-    width: 100%;
+    width: 90%;
 }
 
 .finalizeCompra li {
@@ -100,9 +109,9 @@ body {
     grid-template-columns: 170px minmax(0, 1fr) auto;
     grid-template-areas: "image name delete" "image size size" "image quantity price";
     align-items: center;
-    gap: 12px 20px;
+    gap: 12px 40px;
     min-height: 190px;
-    padding: 20px;
+    padding: 30px;
     list-style: none;
 }
 
@@ -119,11 +128,12 @@ body {
 .finalizeCompra h3 {
     align-self: start;
     font-size: 1.05rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .finalizeCompra li>.material-symbols-outlined {
     grid-area: delete;
-    align-self: start;
+    align-self: center;
     width: 36px;
     height: 36px;
     padding: 6px;
@@ -190,18 +200,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     padding: 24px;
     border: 1px solid #dce2e7;
     border-radius: 12px;
     background-color: #f6f8fa;
     box-shadow: 0 4px 24px rgba(29, 37, 44, 0.08);
-
+    width: 30%;
 }
 
 .butaoCompra button {
 
-    width: 40%;
+    width: 15rem;
     min-height:52px;
     border: 0;
     border-radius: 7px;
@@ -217,7 +226,9 @@ body {
     background: #2f3b46;
 }
 
-@media (max-width: 480px) {
+
+
+@media (max-width: 680px) {
     .primeira {
         width: calc(100% - 20px);
         padding-top: 14px;
