@@ -227,9 +227,9 @@ input[type="search"]::placeholder {
 
 .streames a:hover {
     color: #f0daae;
-    Background-color: #f0daae;
-    BORDER-RADIUS: 15PX;
-    padding-bottom: 0.5rem;
+    border-radius: 20PX;
+    padding: 0.5rem;
+   
 
 }
 

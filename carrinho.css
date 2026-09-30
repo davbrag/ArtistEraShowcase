@@ -23,8 +23,8 @@ body {
 
 .primeira a {
     display: flex;
-    align-items: start;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     margin: 0 0 20px;
