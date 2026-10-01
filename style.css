@@ -239,16 +239,16 @@ input[type="search"]::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     position: relative;
-    background-image: url("/img/Veleiro.png");
+    right: 0%;
     max-width: 100%;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     min-height: 600px;
     padding: 3rem 1rem;
-
+    margin-top: -18%
 }
 
 .tour-header {
@@ -256,6 +256,34 @@ input[type="search"]::placeholder {
     justify-content: center;
 
 }
+.passaros {
+    display: flex;
+    position: relative;
+    justify-content: start;
+    
+    
+   
+}
+.barcoss {
+    display: flex;
+    position: relative;
+    justify-content: end;
+    align-items: end;
+    left:5%;
+   margin-top: 40%;
+    
+}
+.nuvens{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    right: 5%;
+}
+
+
+
 
 .tentiva2 {
     display: flex;
