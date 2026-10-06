@@ -16,7 +16,7 @@ body {
     color: #f8fafc;
     font-family: Arial, sans-serif;
     background-image: linear-gradient(135deg, rgba(134, 150, 83, 0.497), rgba(29, 34, 19, 0.618)),
-        url("/img/1577.jpg");
+        url("./img/1577.jpg");
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;

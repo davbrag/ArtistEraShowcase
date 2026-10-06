@@ -95,7 +95,9 @@ function renderCart() {
 
         const item = document.createElement('li');
         const image = document.createElement('img');
-        image.src = product.image;
+        image.src = product.image.startsWith('/img/')
+            ? product.image.slice(1)
+            : product.image;
         image.alt = product.name;
 
         const name = document.createElement('h3');
@@ -146,4 +148,3 @@ function renderCart() {
 }
 
 renderCart();
-
