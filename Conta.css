@@ -15,8 +15,7 @@ body {
     padding: 24px;
     color: #f8fafc;
     font-family: Arial, sans-serif;
-    background-color: #17251d;
-    background-image: linear-gradient(135deg, rgba(13, 25, 19, 0.82), rgba(72, 86, 39, 0.52)),
+    background-image: linear-gradient(135deg, rgba(134, 150, 83, 0.497), rgba(29, 34, 19, 0.618)),
         url("/img/1577.jpg");
     background-size: cover;
     background-position: center center;
@@ -76,7 +75,7 @@ section input[type="password"] {
 
 section input[type="email"]:focus,
 section input[type="password"]:focus {
-    border-color: #6ab6d4;
+    border-color: #6a98d4;
     background: rgba(255, 255, 255, 0.18);
     box-shadow: 0 0 0 3px rgba(183, 212, 106, 0.18);
 }
@@ -106,7 +105,7 @@ section input[type="submit"] {
     width: 100%;
     height: 46px;
     color: #17251d;
-    background: #89e8dd;
+    background: #9ddff3;
     border: none;
     cursor: pointer;
     border-radius: 10px;
@@ -118,7 +117,7 @@ section input[type="submit"] {
 }
 
 section input[type="submit"]:hover {
-    background: #e2f5a3;
+    background: #979ffd;
     box-shadow: 0 8px 20px rgba(210, 232, 137, 0.2);
     transform: translateY(-2px);
 }
